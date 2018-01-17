@@ -19,6 +19,7 @@ def main(argv=[]):
     )
     args = parser.parse_args(argv)
     print(args)
+    sys.exit(1)
     return int(is_on_branch(args.branch))
 
 
