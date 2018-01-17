@@ -13,12 +13,12 @@ def is_on_branch(protected):
 
 
 def main(argv=[]):
+    print(argv)
     parser = argparse.ArgumentParser()
     parser.add_argument(
         '-b', '--branch', default='master', help='branch to disallow commits to',
     )
     args = parser.parse_args(argv)
-    print(args)
     sys.exit(1)
     return int(is_on_branch(args.branch))
 
