@@ -18,7 +18,7 @@ def main(argv=[]):
         '-b', '--branch', default='master', help='branch to disallow commits to',
     )
     args = parser.parse_args(argv)
-
+    print args
     return int(is_on_branch(args.branch))
 
 
